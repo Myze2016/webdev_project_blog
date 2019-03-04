@@ -1,34 +1,3 @@
-<style type="text/css">
-  textarea {
-   resize: none;
-  }
-  .publish{
-    float:right;
-  }
-</style>
-<div id="main">
-	  <nav class="mainnavbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
-	  <button class="openbtn" onclick="openNav()">&#9776; Account Name</button> 
-      <div class="collapse navbar-collapse" id="navbarText">
-    	<ul class="navbar-nav mr-auto">
-      	<li class="nav-item active">
-        	<a class="nav-link" href="#">Home </a>
-     	 </li>
-      	<li class="nav-item">
-        	<a class="nav-link" href="#">Features</a>
-      	</li>
-      	<li class="nav-item">
-        	<a class="nav-link" href="#">Pricing</a>
-      	</li>
-    	</ul>
-    <span class="navbar-text">
-
-      	Dota2Blog
-
-    </span>
-</div>
-</nav>
-
 <div class="form-group">
   <label for="exampleFormControlTextarea3">Article: </label>
   <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
