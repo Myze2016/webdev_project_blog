@@ -2,9 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class dbmsBlog extends CI_Controller {
-
+	// Calling admin Functions - localhost/blog/admin/dbmsBlog/<function Name>
+	// localhost/blog/ not available
+	// localhost/blog/admin/dbmsblog not available
+	// Clean URLs not implemented
 	
-	public function index()
+	public function user_list()
 	{
 		$this->load->view('templates/admin/header');
 		$this->load->view('templates/admin/nav.php');
