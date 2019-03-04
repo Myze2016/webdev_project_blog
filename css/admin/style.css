@@ -1,3 +1,14 @@
+.container-fluid {
+  padding: 0px;
+}
+
+/*body */
+body {
+  color: rgb(56,41,44);
+  background-color: rgb(231,233,220);
+  font-family: Verdana, Geneva, sans-serif;
+}
+
 /* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -6,26 +17,73 @@
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: rgb(132,60,61); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 35px; /* Place content 60px from the top */
+  padding-top: 15px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgb(213,169,106);
+}
+
+.name {
+  margin: 0;
+  font-size: 15px;
+}
+
+.accountType {
+  font-size: 15px;
+}
+
+.adminInfo {
+  padding: 0px 0px 15px 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(56,41,44);
+
+}
+
+/* UserImage */
+.image {
+  height: 65px;
+  width: 65px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(189,173,148);
+}
+
+/* Text beside User image */
+.adminText {
+  padding: 5px 0px 0px 25px;
 }
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 12px;
   text-decoration: none;
-  font-size: 15px;
-  color: #818181;
+  font-size: 14px;
+  color: rgb(56,41,44);
   display: block;
   transition: 0.3s;
 }
 
+/*Side bar Links top Spacing */
+.links {
+  margin-top: 0px;
+}
+
+/*link Icon */
+.icon {
+  height: 18px;
+  width: 18px;
+  margin: 0;
+  padding: 0;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
-  background: #fff;
+  color: rgb(56,41,44);
+  background: rgb(231,233,220);
 }
 
 /* Position and style the close button (top right corner) */
@@ -42,20 +100,19 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  background-color: rgb(189,173,148);
   padding: 10px 15px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: rgb(231,233,220);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 5px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -64,55 +121,50 @@
   .sidebar a {font-size: 18px;}
 }
 
-.links {
-  margin-top: 20px;
-}
 
+/* Navbar with logo and admininfo Button */
 .mainnavbar {
+  color: rgb(56,41,44);
   padding: 0px 25px 0px 0px;
+  background-color: rgb(189,173,148);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(213,169,106);
+}
+
+
+/*logo*/
+.logo {
+  height: 30px;
+  width: 30px;
+  margin: 0px 7px 0px 0px;
 }
 
 
 
-.image {
-  height: 120px;
-  width: 100px;
-  border-style: solid;
-  border-width: thin;
-  border-color: white;
-}
 
+
+
+/*List of Users Spacing */
 .margin {
-  margin-top: 55px;
+  margin: 15px 15px 0px 15px;
 }
 
-.name {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 17.5px;
-  padding: 0px;
-}
-
-.accountType {
-  width: 100%;
-  text-align: center;
-  font-size: 15px;
-  color: blue;
-  padding: 0px;
+/* User-list Tables */
+table {
+  color: rgb(56,41,44);
 }
 
 
 
-.navtext {
-  float: right;
-}
+/* View articles Articles Page */
 
 .articles {
   border-style: solid;
-  border-width: thin;
-  height: 250px;
-  margin: 25px 0px 25px 0px;
+  border-width: 1px;
+  border-color: rgb(213,169,106);
+  height: 200px;
+  margin: 25px 15px 25px 15px;
   padding: 10px;
 }
 
@@ -122,14 +174,17 @@
   height: 160px;
   width: 100%;
   margin: 10px;
-  border-style: solid;
-  border-width: thin;
+  /*  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(213,169,106); */
 }
 
 .article_text {
   margin: 10px;
 }
 
+
+/* Reply message Page*/
 .message {
   height: 170px;
 }
@@ -139,16 +194,31 @@
   margin: 0px;
 }
 
+.reply {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(213,169,106);
+  height: 250px;
+  margin: 25px 15px 25px 15px;
+  padding: 10px;
+}
 
+/* Message Scrollbar */
 .scrolling-wrapper {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 120px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(213,169,106);
+  padding: 15px;
 }
 
+/* To and date vs Message content Spacing */
 .ptest {
   margin-bottom: 25px;
 }
+
 
 
 
