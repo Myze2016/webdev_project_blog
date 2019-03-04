@@ -8,7 +8,7 @@
 
     <!-- Bootstrap --> 
     <link rel="stylesheet" type="text/css" href="<?php  echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/css/admin/style.css"); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/css/admin/style.css"); ?>?<?php echo time(); ?>">
 
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
